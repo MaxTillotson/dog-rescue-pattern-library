@@ -1,0 +1,54 @@
+:root {
+  --color-primary: #9ccfe7;
+  --color-primary-light: #92c0d6;
+  --color-secondary: #82cfcf;
+  --color-accent: greenyellow;
+  --color-neutral-beige: #e2e2e2;
+  --color-whatever: peachpuff;
+  --font-primary: roboto;
+  --font-secondary: oswald;
+}
+
+html {
+  font-family: roboto(--font-primary);
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+ul {
+
+}
+
+ol {
+
+}
+
+dl {
+
+}
+
+a {
+
+}
+
+blockquote {
+
+}
+
+cite {
+
+}
