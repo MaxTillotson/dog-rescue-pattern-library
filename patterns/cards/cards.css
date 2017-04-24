@@ -17,9 +17,3 @@ html {
 .icon {
   color: var(--color-primary-light);
 }
-
-.rico {
-  background-image: url("../../images/dog.jpg");
-  background-size: cover;
-  background-position: center center;
-}
