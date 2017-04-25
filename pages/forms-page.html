@@ -13,7 +13,7 @@
   <link href="../patterns/cards/cards.css" rel="stylesheet">
   <link href="../patterns/floating-action-button/fab.css" rel="stylesheet">
   <link href="../patterns/footer/footer.css" rel="stylesheet">
-  <link href="../patterns/forms/forms.css" rel="stylesheet">
+  <link href="../patterns/forms/form-field.css" rel="stylesheet">
   <link href="../patterns/navigations/nav.css" rel="stylesheet">
   <link href="../patterns/photo-array/photo-array.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Overpass:400,400i,700|Slabo+13px|Slabo+27px" rel="stylesheet">
@@ -83,13 +83,14 @@
       </div>
 
       <div class="push-1-2">
-        <label class="label" for="name">Name</label>
+        <label for="name">Name</label>
         <input id="name" required aria-describedby="name-error">
         <p class="error-message milli island-1-4 push-0" id="name-error">
-          <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-          <span class="icon-label span">Please provide a name</span>
+          <i class="icon i-16"><svg><use xlink:href="images/error-icon.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a name</span>
         </p>
       </div>
+
 
       <div class="push-1-2">
         <label class="label" for="email">Email</label>
@@ -141,6 +142,7 @@
         <button class="btn" type="submit">Send</button>
       </div>
     </form>
+    <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
   </main>
   <section id="footer">
     <footer role="contentinfo">
@@ -168,6 +170,5 @@
       </div>
     </footer>
   </section>
-  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>
