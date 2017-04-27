@@ -4,7 +4,6 @@
   --color-secondary: #82cfcf;
   --color-accent: greenyellow;
   --color-neutral-beige: #e2e2e2;
-  --color-whatever: peachpuff;
   --font-primary: roboto;
   --font-secondary: oswald;
 }
@@ -13,33 +12,15 @@ html {
   font-family: Roboto, sans-serif;
 }
 
-h1 {
-}
-
-h2 {
-}
-
-h3 {
-}
-
-h4 {
-}
-
-ul {
-}
-
-ol {
-}
-
-dl {
+h1, h2, h3, h4, h5, h6, ul, ol, dl {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
 }
 
 a {
+  color: var(--color-accent);
 }
 
-blockquote {
-}
-
-cite {
-
+blockquote, cite {
+  color: var(--color-light);
 }

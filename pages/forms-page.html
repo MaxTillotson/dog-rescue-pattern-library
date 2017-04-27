@@ -3,21 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Application</title>
+  <title>Forms</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="../common/modules.css" rel="stylesheet">
-  <link href="../common/grids.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
   <link href="../common/type.css" rel="stylesheet">
   <link href="../common/theme.css" rel="stylesheet">
   <link href="../patterns/banner/banner.css" rel="stylesheet">
   <link href="../patterns/buttons/buttons.css" rel="stylesheet">
   <link href="../patterns/cards/cards.css" rel="stylesheet">
-  <link href="../patterns/floating-action-button/fab.css" rel="stylesheet">
   <link href="../patterns/footer/footer.css" rel="stylesheet">
-  <link href="../patterns/forms/form-field.css" rel="stylesheet">
+  <link href="../patterns/forms/forms.css" rel="stylesheet">
   <link href="../patterns/navigations/nav.css" rel="stylesheet">
-  <link href="../patterns/photo-array/photo-array.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Overpass:400,400i,700|Slabo+13px|Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
 </head>
 
 <body>
@@ -74,7 +72,7 @@
     </div>
 
     <div class="header max length">
-      <h2 class="tera text-center">Register with us to recieve updates!</h2>
+      <h2 class="tera text-center">Register with us to recieve updates or donate!</h2>
     </div>
 
     <form class="max-length" method="post" novalidate>
@@ -120,7 +118,7 @@
 
       <div class="push-1-2">
         <label class="label" for="choices">Card type</label>
-        <select id="choices" required aria-describedby="name-error">
+        <select id="choices" required aria-describedby="card-error">
           <option value="">---</option>
           <option>Visa</option>
           <option>American Express</option>
@@ -129,6 +127,24 @@
         <p class="error-message milli island-1-4 push-0" id="card-error">
           <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
           <span class="icon-label span">Please select a card type</span>
+        </p>
+      </div>
+
+      <div class="push-1-2">
+        <label for="name">Card number</label>
+        <input id="name" required aria-describedby="card-number-error">
+        <p class="error-message milli island-1-4 push-0" id="card-number-error">
+          <i class="icon i-16"><svg><use xlink:href="images/error-icon.svg#error" /></svg></i>
+          <span class="icon-label">Please provide your card information</span>
+        </p>
+      </div>
+
+      <div class="push-1-2">
+        <label for="name">Card expiry date</label>
+        <input id="name" required aria-describedby="card-expiry-error">
+        <p class="error-message milli island-1-4 push-0" id="card-expiry-error">
+          <i class="icon i-16"><svg><use xlink:href="images/error-icon.svg#error" /></svg></i>
+          <span class="icon-label">Please provide your card expiry date</span>
         </p>
       </div>
 
@@ -156,17 +172,17 @@
         <div class="icon-nav">
           <a class="inline-block push" href="#">
             <i class="icon i-32">
-              <svg><use xlink:href="../../images/socialicons.svg#facebook" /></svg>
+              <svg><use xlink:href="../images/socialicons.svg#facebook" /></svg>
             </i>
           </a>
           <a class="inline-block push" href="#">
             <i class="icon i-32">
-              <svg><use xlink:href="../../images/socialicons.svg#instagram" /></svg>
+              <svg><use xlink:href="../images/socialicons.svg#instagram" /></svg>
             </i>
           </a>
           <a class="inline-block push" href="#">
             <i class="icon i-32">
-              <svg><use xlink:href="../../images/socialicons.svg#twitter" /></svg>
+              <svg><use xlink:href="../images/socialicons.svg#twitter" /></svg>
             </i>
           </a>
         </div>
